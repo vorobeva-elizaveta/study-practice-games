@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "eslint": "^8.52.0",
     "rollup": "^4.2.0"
   },
   "dependencies": {
