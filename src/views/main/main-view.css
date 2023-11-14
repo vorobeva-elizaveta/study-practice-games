@@ -1,9 +1,0 @@
-.main-page {
-    padding: 16px;
-}
-
-.main-page__games-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-}
