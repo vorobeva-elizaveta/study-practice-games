@@ -1,10 +1,15 @@
 {
-  "devDependencies": {
-    "eslint": "^8.52.0",
-    "rollup": "^4.2.0"
-  },
-  "dependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "rollup-plugin-import-css": "^3.3.5"
-  }
+    "devDependencies": {
+        "eslint": "^8.52.0",
+        "rollup": "^4.2.0"
+    },
+    "type": "module",
+    "scripts": {
+        "start": "live-server",
+        "build": "rollup -c --watch"
+    },
+    "dependencies": {
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "rollup-plugin-import-css": "^3.3.5"
+    }
 }

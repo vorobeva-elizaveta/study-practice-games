@@ -1,0 +1,17 @@
+.game-card {
+    border: 1px solid #333;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.game-card__content {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.game-card p {
+    margin: 12px 0;
+}
