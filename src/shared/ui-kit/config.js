@@ -1,3 +1,6 @@
-import { BaseButton } from './index'
+import { BaseButton, BaseInput } from './index'
 
-export default [{ name: 'BaseButton', path: BaseButton }]
+export default [
+  { name: 'BaseButton', path: BaseButton },
+  { name: 'BaseInput', path: BaseInput }
+]
