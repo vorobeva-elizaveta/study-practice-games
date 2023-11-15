@@ -22,11 +22,11 @@ defineProps({
 
 <style lang="scss">
 .game-card {
-  @apply rounded-2xl overflow-hidden border border-solid border-gray-200;
+  @apply flex flex-col rounded-2xl overflow-hidden border border-solid border-gray-200;
 
   &__cover-container {
     width: 100%;
-    height: 60%;
+    height: 150px;
     position: relative;
 
     img {
@@ -38,8 +38,8 @@ defineProps({
 
   &__container {
     padding: 12px;
-    height: 40%;
-    @apply flex flex-col justify-between;
+    flex: 1 1 auto;
+    @apply flex flex-col gap-2 justify-between;
   }
   &__title {
     @apply font-semibold text-base;
