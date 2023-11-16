@@ -9,7 +9,6 @@ let cellsElements = ref(),
 const onLoad = async () => {
   await nextTick()
   cellsElements.value = document.querySelectorAll('.game-field__cell')
-  console.log(refCells.value)
 }
 
 const setValueInCell = (cellIndex) => {
@@ -20,7 +19,7 @@ const setValueInCell = (cellIndex) => {
     } else {
       mainPlayer.value = 1
     }
-    console.log(getResult())
+    getResult()
   }
 }
 
@@ -52,7 +51,7 @@ const getResult = () => {
       cellsElements.value[6]?.innerHTML == 'X')
   ) {
     result.value = 'Выиграл первый игрок!'
-    return 'X!'
+    return
   }
   if (
     (cellsElements.value[0]?.innerHTML == 'O' &&
@@ -81,7 +80,7 @@ const getResult = () => {
       cellsElements.value[6]?.innerHTML == 'O')
   ) {
     result.value = 'Выиграл второй игрок!'
-    return 'O!'
+    return
   }
   let isAllDone = !refCells.value?.map((el) => el.innerHTML != '').includes(false)
   if (isAllDone) {
